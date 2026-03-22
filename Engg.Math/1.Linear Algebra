@@ -1,0 +1,119 @@
+# COMPLETE DAILY STUDY DOCUMENTATION
+**Date:** Sunday, March 22, 2026  
+**Subject:** Engineering Mathematics  
+**Topic:** Unit 1 - Linear Algebra Complete Summary  
+
+---
+
+## MODULE 1: MATRIX PROPERTIES AND EIGENVALUES
+
+### Key Concepts
+* **THE TRACE:** The sum of the elements on the main diagonal of a square matrix. 
+  * *Shortcut Rule:* The Trace is always equal to the Sum of the Eigenvalues ($\lambda_1 + \lambda_2 + ... + \lambda_n$).
+* **THE DETERMINANT:** A single number representing how much the matrix scales an area (2D) or volume (3D). A negative determinant indicates the space was flipped or mirrored.
+  * *Shortcut Rule:* The Determinant is always equal to the Product of the Eigenvalues ($\lambda_1 \times \lambda_2 \times ... \times \lambda_n$).
+* **SCALING A MATRIX:** If you multiply an $n \times n$ matrix by a scalar $k$, the new determinant is: $k^n \times (\text{Original Determinant})$.
+* **SINGULAR MATRIX:** A matrix with a determinant of exactly $0$. It cannot be inverted, and at least one of its eigenvalues must be $0$.
+
+### Solved Questions
+**Q1. A $3 \times 3$ matrix $A$ has the following elements on its main diagonal: $2, 5,$ and $-1$. If two of its eigenvalues are $3$ and $4$, what is the third eigenvalue?**
+* **Answer:** $-1$ 
+* **Logic:** Trace is $6$. $3 + 4 + x = 6$. $x = -1$.
+
+**Q2. Let $M$ be a $3 \times 3$ matrix with a determinant of $4$. What is the value of the determinant of $2M$?**
+* **Answer:** $32$ 
+* **Logic:** $2^3 \times 4 = 32$.
+
+**Q3. The Trace and Determinant of a $2 \times 2$ matrix are $5$ and $6$ respectively. What are the two eigenvalues of this matrix?**
+* **Answer:** $2$ and $3$ 
+* **Logic:** Numbers that add to $5$ and multiply to $6$.
+
+**Q4. A $3 \times 3$ matrix has a determinant of $10$. If two of its eigenvalues are $2$ and $-1$, what is the third eigenvalue?**
+* **Answer:** $-5$ 
+* **Logic:** Product is $10$. $2 \times -1 \times x = 10$. $x = -5$.
+
+**Q5. If a matrix $A$ is a Singular Matrix, which of the following statements about its eigenvalues must be true?**
+* **Answer:** At least one of its eigenvalues is exactly zero.
+
+---
+
+## MODULE 2: THE CAYLEY-HAMILTON THEOREM
+
+### Key Concepts
+* **THE CORE RULE:** Every square matrix satisfies its own characteristic equation. You can replace the Lambda in the equation with the Matrix itself ($A$), and replace plain numbers with the Identity Matrix ($I$).
+* **THE INVERSE SHORTCUT:** To find the inverse ($A^{-1}$) without heavy calculation:
+  1. Write the characteristic eq: $A^2 - 4A + 3I = 0$
+  2. Multiply by $A^{-1}$: $A - 4I + 3A^{-1} = 0$
+  3. Use algebra to solve: $3A^{-1} = 4I - A$
+  4. Final Answer: $A^{-1} = \frac{1}{3}(4I - A)$
+
+### Solved Questions
+**Q1. Matrix $M$ is a $2 \times 2$ matrix. Row 1: $2, 1$. Row 2: $1, 3$. Using the formula $\lambda^2 - (\text{Trace})\lambda + (\text{Determinant}) = 0$, what is the characteristic equation?**
+* **Answer:** $\lambda^2 - 5\lambda + 5 = 0$ 
+* **Logic:** Trace is $5$, Determinant is $5$.
+
+**Q2. A $2 \times 2$ matrix $A$ has the characteristic equation $A^2 - 4A + 3I = 0$. What is its inverse, $A^{-1}$?**
+* **Answer:** $A^{-1} = \frac{1}{3}(4I - A)$ 
+* **Logic:** Multiply by $A^{-1}$ and solve for $A^{-1}$.
+
+---
+
+## MODULE 3: RANK OF A MATRIX
+
+### Key Concepts
+* **THE DEFINITION:** The rank of a matrix is the number of unique, non-redundant (linearly independent) rows it contains.
+* **THE DETERMINANT TEST:** If the determinant of an $n \times n$ matrix is NOT zero, the matrix has full rank (Rank = $n$). If the determinant IS zero, there is redundant data, and the rank is strictly less than $n$.
+* **THE PROPORTIONALITY TRAP:** If rows are just multiples of each other (cloned data), there is only $1$ piece of original information. The Rank is $1$. A rank of $0$ only exists if every number in the matrix is $0$.
+
+### Solved Questions
+**Q1. What is the rank of the $3 \times 3$ matrix: Row 1 ($1, 2, 3$), Row 2 ($2, 4, 6$), Row 3 ($3, 6, 9$)?**
+* **Answer:** Rank $1$ 
+* **Logic:** Rows 2 and 3 are exact multiples of Row 1. Only 1 unique row.
+
+**Q2. A $3 \times 3$ matrix $A$ has a determinant of $24$. What is the rank of matrix $A$?**
+* **Answer:** Rank $3$ 
+* **Logic:** Non-zero determinant means full rank.
+
+**Q3. Consider a $3 \times 3$ matrix $M$ with a determinant of $0$. Which statement is FALSE?**
+* **Answer:** The rank is $3$. 
+* **Logic:** If determinant is $0$, rank MUST be less than $3$.
+
+**Q4. What is the rank of the $2 \times 2$ matrix: Row 1 ($4, 5$), Row 2 ($4, 5$)?**
+* **Answer:** Rank $1$ 
+* **Logic:** One row is a duplicate, leaving 1 unique row.
+
+**Q5. If the rank of an $n \times n$ matrix is $n$, the matrix is called:**
+* **Answer:** Non-singular matrix 
+* **Logic:** Full rank means non-zero determinant.
+
+---
+
+## MODULE 4: SYSTEMS OF LINEAR EQUATIONS
+
+### Key Concepts
+* **NO SOLUTION (Inconsistent / Contradiction):** * *Graphically:* Parallel lines that never cross.
+  * *Matrix Rule:* Rank of $A \neq$ Rank of $[A|B]$.
+* **INFINITE SOLUTIONS (Consistent / Redundancy):** * *Graphically:* The exact same line overlapping itself. 
+  * *Matrix Rule:* Rank of $A =$ Rank of $[A|B] < \text{Number of Variables}$.
+* **UNIQUE SOLUTION (Consistent / Perfect Match):** * *Graphically:* Two distinct lines crossing at exactly one point.
+  * *Matrix Rule:* Rank of $A =$ Rank of $[A|B] = \text{Number of Variables}$. (Determinant is not $0$).
+
+### Solved Questions
+**Q1. A system of linear equations is said to be "Inconsistent" (having zero solutions) if:**
+* **Answer:** Rank of $A <$ Rank of $[A|B]$.
+
+**Q2. Consider equations: $2x + 3y = 5$ AND $4x + 6y = 10$. How many solutions?**
+* **Answer:** Infinite solutions. 
+* **Logic:** The second equation is exactly double the first; they are the same line.
+
+**Q3. Consider equations: $x + y = 3$ AND $2x + 2y = 8$. What is the nature of this system?**
+* **Answer:** Inconsistent / No solution. 
+* **Logic:** $2 \times 3$ is $6$, not $8$. This is a mathematical contradiction; parallel lines.
+
+**Q4. For a system of $3$ linear equations with $3$ variables, the coefficient matrix $A$ has a determinant of $15$. What can you say about the system?**
+* **Answer:** It has a unique solution. 
+* **Logic:** A non-zero determinant means full rank and a perfect intersection.
+
+**Q5. You have a system of $3$ equations with $3$ variables. Rank of $A$ is $2$, and Rank of $[A|B]$ is $2$. This system has:**
+* **Answer:** Infinite solutions. 
+* **Logic:** Ranks match, so it's consistent. But Rank $2$ is less than $3$ variables, meaning we lack enough unique rules.
