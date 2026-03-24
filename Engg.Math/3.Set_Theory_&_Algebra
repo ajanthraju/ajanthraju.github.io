@@ -1,0 +1,68 @@
+# COMPLETE DAILY STUDY DOCUMENTATION
+**Date:** Tuesday, March 24, 2026  
+**Subject:** Engineering Mathematics  
+**Topic:** Unit 1 - Set Theory & Algebra Complete Summary  
+
+---
+
+## MODULE 1: SETS AND POWER SETS
+
+### Key Concepts & Real-World Examples
+* **UNION (A ∪ B):** Combining all items. 
+* **INTERSECTION (A ∩ B):** Only the overlapping items. 
+* **POWER SET P(A):** The set of all possible subsets. Formula: 2ⁿ elements.
+  * *Everyday Analogy:* A pizza place offers 3 toppings: {Pepperoni, Onion, Mushroom}. The Power Set is every possible pizza you could order. You could get nothing (cheese pizza), just Pepperoni, Pepperoni + Onion, or all three. 2³ = 8 possible combinations.
+
+---
+
+## MODULE 2: RELATIONS
+
+### Key Concepts & Real-World Examples
+A relation defines how items connect to one another.
+* **SYMMETRIC:** If A relates to B, B MUST relate to A. 
+  * *Everyday Analogy:* Being a sibling. If I am your sibling, you are automatically my sibling.
+* **TRANSITIVE:** If A relates to B, and B relates to C, then A MUST relate to C.
+  * *Everyday Analogy:* Being "taller than". If Alice is taller than Bob, and Bob is taller than Charlie, then Alice is definitely taller than Charlie. 
+
+---
+
+## MODULE 3: FUNCTIONS
+
+### Key Concepts & Real-World Examples
+Functions map a starting group (Set X) to a destination (Set Y).
+* **INJECTIVE (One-to-One - "No Sharing"):** Every X maps to a completely unique Y. 
+  * *Everyday Analogy:* A movie theater. Every person gets their own unique seat. Nobody is sitting on top of each other. (Empty seats left over are fine).
+* **SURJECTIVE (Onto - "Full Coverage"):** Every single Y is mapped to by at least one X. 
+  * *Everyday Analogy:* A hotel on New Year's Eve. Every single room in the building is booked. No room is empty. (Friends sharing a room is fine).
+* **BIJECTIVE (Both):** A perfect 1:1 pairing.
+  * *Everyday Analogy:* The final round of Musical Chairs. 5 kids, 5 chairs. No sharing, and no empty chairs.
+
+---
+
+## MODULE 4: ALGEBRAIC STRUCTURES
+
+### Key Concepts & Real-World Examples
+* **GROUPS (With Identity and Inverse):** A set with an operation that allows you to undo actions.
+  * *Everyday Analogy:* A steering wheel. If you turn the wheel 90 degrees to the right (Action), the Identity is the wheel resting exactly in the center (0 degrees). The Inverse is turning the wheel 90 degrees to the left to undo your action and get back to the center.
+* **LATTICES:** A hierarchy where items have unique upper and lower bounds.
+  * *Everyday Analogy:* A corporate organizational chart. The "Greatest Element" is the CEO at the very top who oversees everything. The "Minimal Element" is the entry-level interns at the bottom. 
+
+---
+
+## DAILY VERIFICATION Q&A
+
+**Q1. If Set A = {1, 2, 3, 4}, how many elements are in the Power Set P(A)?**
+* **Answer:** 16 
+* **Logic:** The formula is 2ⁿ. Since there are 4 elements, 2⁴ = 16.
+
+**Q2. A relation R on set {1, 2} is defined as R = {(1, 1), (2, 2), (1, 2)}. Is this relation Symmetric?**
+* **Answer:** No 
+* **Logic:** For it to be symmetric, the existence of (1, 2) strictly requires the existence of (2, 1). Since (2, 1) is missing, the symmetry is broken.
+
+**Q3. In a Hasse diagram representing a Lattice, the unique element that is "above" every other element is called the:**
+* **Answer:** Greatest Element 
+* **Logic:** This is the absolute peak of the hierarchy, bounding all other elements beneath it.
+
+**Q4. For a set to be a "Group" under an operation, every element must have an "Inverse." In the set of Integers under Addition (+), what is the inverse of 5?**
+* **Answer:** -5 
+* **Logic:** The inverse is the value needed to return to the identity state (0). 5 + (-5) = 0.
