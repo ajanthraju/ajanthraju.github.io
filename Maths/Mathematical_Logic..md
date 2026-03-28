@@ -13,8 +13,26 @@ Mathematical logic translates natural language into formal symbols to remove amb
 | **Negation** | $\neg P$ | NOT $P$ | Opposite of $P$. |
 | **Conjunction** | $P \wedge Q$ | $P$ AND $Q$ | True ONLY if **both** are True. |
 | **Disjunction** | $P \vee Q$ | $P$ OR $Q$ | False ONLY if **both** are False. |
-| **Implication** | $P \rightarrow Q$ | If $P$ then $Q$ | False ONLY if $T \rightarrow F$ (Broken Promise). |
+| **Implication** | $P \rightarrow Q$ | If $P$ then $Q$ | False ONLY if $T \rightarrow F$ (Broken Promise). 
+  * *The Promise Analogy:* "If you get 100% ($P$), then I will buy you a car ($Q$)."
+  * $T \rightarrow T =$ True (Promise kept).
+  * $T \rightarrow F =$ False (Promise broken - THE ONLY FALSE SCENARIO).
+  * $F \rightarrow T =$ True (Pity gift, rule not broken).
+  * $F \rightarrow F =$ True (Promise kept).|
 | **Bi-conditional** | $P \leftrightarrow Q$ | $P$ iff $Q$ | True if $P, Q$ have the **same** value. |
+
+
+## Logic Variations (Converse, Inverse, Contrapositive)
+* **The Converse ($Q \rightarrow P$):** *Swap the items*. (Example: "If the grass is wet, then it rains." - Not logically equivalent).
+* **The Inverse ($\neg P \rightarrow \neg Q$):** *Negate both items*, keep original order. (Example: "If it does not rain, grass is not wet." - Not logically equivalent).
+* **The Contrapositive ($\neg Q \rightarrow \neg P$):** *Flip the order AND negate both*. 
+  * *The Exam Golden Rule:* The *Contrapositive* is ALWAYS mathematically equivalent to the original statement.
+  * *Example Problem:* What is the Contrapositive of "If the system crashes, then the alarm sounds"?
+  * **Step 1:** Identify $P$ (system crashes) and $Q$ (alarm sounds).
+  * **Step 2:** Negate both: $\neg P$ (system does not crash), $\neg Q$ (alarm does not sound).
+  * **Step 3:** Swap their order to form $\neg Q \rightarrow \neg P$.
+  * **Final Answer:** "If the alarm does not sound, then the system did not crash."
+
 
 ### Essential Identities
 
