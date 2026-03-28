@@ -14,13 +14,14 @@ Mathematical logic translates natural language into formal symbols to remove amb
 | **Conjunction** | $P \wedge Q$ | $P$ AND $Q$ | True ONLY if **both** are True. |
 | **Disjunction** | $P \vee Q$ | $P$ OR $Q$ | False ONLY if **both** are False. |
 | **Implication** | $P \rightarrow Q$ | If $P$ then $Q$ | False ONLY if $T \rightarrow F$ (Broken Promise). 
+| **Bi-conditional** | $P \leftrightarrow Q$ | $P$ iff $Q$ | True if $P, Q$ have the **same** value. |
+
+* **Implication**
   * *The Promise Analogy:* "If you get 100% ($P$), then I will buy you a car ($Q$)."
   * $T \rightarrow T =$ True (Promise kept).
   * $T \rightarrow F =$ False (Promise broken - THE ONLY FALSE SCENARIO).
   * $F \rightarrow T =$ True (Pity gift, rule not broken).
   * $F \rightarrow F =$ True (Promise kept).|
-| **Bi-conditional** | $P \leftrightarrow Q$ | $P$ iff $Q$ | True if $P, Q$ have the **same** value. |
-
 
 ## Logic Variations (Converse, Inverse, Contrapositive)
 * **The Converse ($Q \rightarrow P$):** *Swap the items*. (Example: "If the grass is wet, then it rains." - Not logically equivalent).
